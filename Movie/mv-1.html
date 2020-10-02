@@ -1,0 +1,267 @@
+
+<meta name="apple-mobile-web-app-capable" content="yes"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="はるはる動画サービス">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338">
+
+<link rel="manifest" href="https://haruharutv.sa-kon.net/Movie/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('https://haruharutv.sa-kon.net/sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script><meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+var url = "https://mv-.glitch.me/rest.php";
+
+
+console.log('いいね数のリセット  : %o', url);
+$.ajax({
+    type: "POST",
+    url: "https://cast-.glitch.me/to.php",
+    dataType: "json"
+});
+
+countup();
+
+function countup (){
+    var idc = setTimeout(countup, 1000);
+    
+$.ajax({
+    type: "POST", //　POSTでも可
+    url: "https://mv-.glitch.me/mv-1god.php",
+    
+    dataType : "json", //　データ形式を指定
+    scriptCharset: 'utf-8' //　文字コードを指定
+})
+
+  .then(
+    function( param ){　 
+    
+    var greet = document.getElementById('g');
+greet.innerHTML = param;
+       
+         
+       
+    },
+  
+  
+    function( XMLHttpRequest, textStatus, errorThrown ){
+        console.log( errorThrown ); //　エラー表示
+});
+}
+
+
+
+
+function c(){
+
+$.ajax({
+    type: "POST",
+    url: "https://cast-.glitch.me/tj.php",
+    dataType: "json"
+});
+
+}
+
+
+function god(){
+
+$.ajax({
+    type: "POST",
+    url: "https://mv-.glitch.me/mv-1god+.php",
+    dataType: "json"
+});
+
+}
+
+
+
+
+</script>
+<style>
+ti{
+position:relative;  
+  top: -24rem;
+  left: 0;
+
+display: inline;
+z-index: 2;
+}
+
+div.title{
+background-color:#fff;
+width:100%;
+font-size:1.5em;
+text-align:center;
+}
+
+
+div.vdo{
+background-color:#fff;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+img.ic{
+
+width:15%;
+
+}
+img.log{
+
+width:15%;
+
+}
+img.god{
+margin-left: 10%;
+width:15%;
+
+}
+
+#sm{
+ 
+ 
+z-index: 1;
+ width:100%;
+
+}
+
+
+@media screen and (min-width:600px){
+
+ti{
+position:relative;  
+  top: -65rem;
+  left: 0;
+
+display: inline;
+z-index: 2;
+}
+
+  img.log{
+
+width:5%;
+
+}
+img.ic{
+width:5%;
+
+}
+
+#sm{
+
+width:100%;
+
+
+z-index: 1;
+}
+img.god{
+
+width:2%;
+margin-left: 10%;
+}
+
+div.vdo{
+background-color:#fff;
+width:50%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+
+
+
+}
+haim{
+}
+</style>
+<div class="title"><img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338" class="log">はるはるmovie</div><br>
+<script>
+function mtoff(){
+var media=document.getElementById("sm");
+media.muted = false;
+}
+</script>
+
+
+<video poster="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-24%20204856.png?v=1600948196621" id="sm" controls src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F%EF%BD%84%20(2).mp4?v=1600947968742" autoplay muted webkit-playsinline playsinline></video><dg>
+<img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F6D446DCD-353B-4C2B-A667-40B43B48EBD6.png?v=1601022698511" class="ic">
+
+
+
+<b>はるはるTV ☑︎</b>
+<hr>
+
+<img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F9AA0B5BF-33E6-467F-9A0E-AE580CAFD3A1.jpeg?v=1601023042169" class="god" onclick="god()">
+<span id="g"></span><img src="https://cdn.glitch.com/e3639768-ef68-497d-b61f-d80a3d04c8b2%2F438DC7F0-1028-4911-B9EB-3E59B51EFF50.png?v=1601179257559" class="god" onclick="c()"><hr>
+
+
+
+<p>久しぶりの編集だったので、大変でした。pc表示だったらDLボタンがありますが、転載とかはしないでください</p><hr>
+</dg><ti>マイクラ実況 初めてのマイクラ! ネザーウォートに挑戦!?<button onclick="mtoff();style.display='none';">ミュートを解除</button></ti>
+
+
+
+
+
+
+
+
+
+<script>
+var url = location.href
+
+if(url.indexOf('http:') >= 0) { // 判定方法の修正
+  // url文字列の書き換え
+  var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
+
+  // リダイレクト
+  location.replace(newUrl);
+}
+
+</script>
+
+
+<style>
+.b {
+  width:100%;
+  
+  font-size:12px;
+  color:#000;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#f2f0f0;
+  border-radius: 5px 5px 0px 0px;
+  
+  position: absolute;/*←絶対位置*/
+    bottom: 0;
+  
+}
+  c {
+    
+  text-align:center;
+  }
+  body{
+  font-family: 'Kosugi Maru', sans-serif;
+  
+  
+  
+  background-color: #f2f0f0;
+
+
+  
+  }
+</style>

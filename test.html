@@ -1,0 +1,62 @@
+﻿<head>
+<title>Eweb創ろう！！ ver 1.0.0.3</title>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<button onclick="open('about:blank', '_self').close();">終了✖</button><button onclick="window.open('https://haruharutv.glitch.me/', null, 'width=500,toolbar=yes,menubar=yes,scrollbars=yes');">ヘルプ</button><button title="製品版限定の機能です" disabled>共有</button><button title="製品版限定の機能です" disabled>ショートカットボタン</button><hr>
+<h1>イイweb創ろう！！</h1>
+	<small>powerd by はるはるweb</small>
+<hr>
+<button onclick="chp1()">サンプル1</button><button onclick="chp2()">サンプル2</button><button onclick="chp3()">サンプル3（挑戦！）</button>
+
+<hr>
+<form name="txt">
+<textarea wrap="hard" rows="20" cols="100%" name="ontext">サンプルを選択してください</textarea>
+</form>
+<div id="rung"></div><hr>
+<p>コントロール</p>
+<button onclick="run()">run→</button><button>stop■</button>
+</body>
+<script src="https://smn.glitch.me/push.js"></script>
+<script>
+function run(){
+push("コンピューター","実行します...");
+var tenp;
+temp = document.getElementById("rung");
+
+temp.innerHTML = document.txt.ontext.value;
+
+}
+function chp1(){
+alert('この講座のポイント!!\n<○○>で始まったら</○○>で終わる');
+	document.txt.ontext.value = "<p>要素の上と下に改行あり</p><!--ここでは一般的な文字について学びます--><h1>大見出し見出し</h1>";
+myAlertClose();
+
+}
+
+function chp2(){
+alert('この講座のポイント!!\n○○{}にタグの名前をきちんと入れる');
+	document.txt.ontext.value = "<p>背景赤</p><style> p{background-color: red;}</style><!--背景を赤にします!!-->";
+myAlertClose();
+}
+function chp3(){
+alert('この講座のポイント!!\n;を忘れない');
+	document.txt.ontext.value = "alert('文字');<!--実行する際はscriptタグとサンドイッチになるようにしてください-->";
+myAlertClose();
+}
+</script>
+
+
+
+<style>
+body {
+background-color: lightgreen;
+color:#fff;
+}
+</style>
+<hr>
+<small>体験版の為動画の宣伝が入ります</small><hr>
+<p>はるはるTV5周年</p>
+	<video src="https://cdn.glitch.com/37678122-864f-4dae-aea3-6457381e4408%2Fe3342b72-93eb-4a4c-bdae-a0166de9f522_trim.A724039D-071A-47C8-9EC3-0DEA9761BA38.mp4?v=1598148330349" height="50%" width="50%" controls playsinline muted autoplay></video>
+<hr>

@@ -1,0 +1,17 @@
+{
+  "name":"はるはるアプリ",
+  "short_name":"はるはるApp",
+  "icons": [{
+      "src": "https://cdn.glitch.com/e3342b72-93eb-4a4c-bdae-a0166de9f522%2FiconDownload.cgi.png?v=1595495999276",
+      "sizes":"192x192",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/e3342b72-93eb-4a4c-bdae-a0166de9f522%2FiconDownload.cgi.png?v=1595495999276",
+      "sizes":"512x512",
+      "type": "image/png"
+    }],
+  "start_url": "index.html?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}

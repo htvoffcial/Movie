@@ -1,0 +1,110 @@
+<style>
+ video {
+      width: 100%;
+        height: 50%;
+    }
+  .box6 {
+  
+  
+    background: #f0f7ff;
+    border: dashed 4px #5b8bd0;/*ì_ê¸*/
+}
+  img.videoplay {
+    height: 2em;
+    width: 2em;
+  }
+  img.requestfullscreen {
+    height: 2em;
+    width: 2em;
+  }
+  
+</style> 
+
+ 
+
+
+
+
+
+   
+  <script>
+    
+    
+    $(function() {
+  $('#fullscreen .requestfullscreen').click(function() {
+    $('#fullscreen').fullscreen();
+    return false;
+  });
+  $('#fullscreen .exitfullscreen').click(function() {
+    $.fullscreen.exit();
+    return false;
+  });
+  $(document).bind('fscreenchange', function(e, state, elem) {
+    if ($.fullscreen.isFullScreen()) {
+      $('#fullscreen .requestfullscreen').hide();
+      $('#fullscreen .exitfullscreen').show();
+    } else {
+      $('#fullscreen .requestfullscreen').show();
+      $('#fullscreen .exitfullscreen').hide();
+    }
+  });
+});
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  function play() {
+  
+  video.play();
+    
+
+  
+  }
+    
+        
+function pause() {
+  
+  video.pause();
+  
+
+  
+}  
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="jquery.fullscreen.min.js"></script>
+
+ 
+  <div id="fullscreen">
+<div class="box6">
+  
+    
+     <video src="https://cdn.glitch.com/f4e12fbd-8638-43b5-a099-6058360238c8%2F%23%E5%AE%B6%E3%81%AB%E3%81%84%E3%82%88%E3%81%86.mp4?v=1587963575329" poster="https://cdn.glitch.com/f4e12fbd-8638-43b5-a099-6058360238c8%2F%E5%86%8D%E7%94%9F%E3%83%9C%E3%82%BF%E3%83%B3.png?v=1588038658472" id="video"></video>
+     <div class="box6">
+     <br>
+  <img src="https://cdn.glitch.com/f4e12fbd-8638-43b5-a099-6058360238c8%2F%E5%86%8D%E7%94%9F%E3%83%9C%E3%82%BF%E3%83%B3.png?v=1588038658472" class="videoplay" onclick="play()">
+   <img src="https://cdn.glitch.com/f4e12fbd-8638-43b5-a099-6058360238c8%2Fimage-convert_cman_jp_20200428113407..png?v=1588041560925" class="videoplay" onclick="pause()">
+    <img src="https://haruharutv.sa-kon.net/%E6%94%BE%E9%80%81/login/play/0001.mp4" class="requestfullscreen">
+    </div>
+    </div>
+
+       
+  </div>

@@ -1,0 +1,113 @@
+
+<meta name="apple-mobile-web-app-capable" content="yes"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="はるはるアプリ">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2F32304413-89A0-4A15-945A-CDA96EA24811.png?v=1600500470321">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script><meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>div{
+background-color:#bad4d3;
+width:100%;
+font-size:1.5em;
+}
+img{
+border-radius:50%;
+width:15%;
+
+}
+
+</style>
+<div><img src="https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2F32304413-89A0-4A15-945A-CDA96EA24811.png?v=1600500470321">はるはるAuthentication</div><a href="auth.html">戻る</a>横にスワイプしても戻れます<br>
+<script>
+var url = location.href
+
+if(url.indexOf('http:') >= 0) { // 判定方法の修正
+  // url文字列の書き換え
+  var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
+
+  // リダイレクト
+  location.replace(newUrl);
+}
+
+</script>
+<script>
+
+var id = setTimeout(countup, 1000);   countup();
+
+function countup (){
+    var idc = setTimeout(countup, 1000);
+    
+$.ajax({
+    type: "POST", //　POSTでも可
+    url: "https://smn.glitch.me/App/auth.php", //　送り先
+    //　渡したいデータ
+    dataType : "json", //　データ形式を指定
+    scriptCharset: 'utf-8' //　文字コードを指定
+})
+
+  .then(
+    function( param ){　 
+   if(param=="fhi"){
+   
+   }else{
+   
+       document.write("https://smn.glitch.me/より<br>","認証発生<br>認証コード:",param,"<hr>");
+         document.cookie='max-age=100000; osirase='+param;
+           clearTimeout(idc);
+       }
+         
+       
+    },
+  
+  
+    function( XMLHttpRequest, textStatus, errorThrown ){
+        console.log( errorThrown ); //　エラー表示
+});
+}
+</script><hr>
+このサービスは、<a href="https://smn.glitch.me/">https://smn.glitch.me/</a>と連携していて、待ち時間なしで、そしてリアルタイムに二段階認証がご利用いただけるサービスです。
+<hr>
+<h3>Q&A</h3><p>Q.待機画面に、知らないコードが表示されます<br><br>A.ご安心ください、表示されても無視されて構いません、ただそのコードの有効期限が切れる(30分)までは、第三者にそのコードを出来るだけ教えないようにしてください<br><br>Q.直接質問したいのですが<br><br>A.はるはるサイトトップでtifnメッセージの開発中なので完成したら直接質問できるようになります</p>
+<style>
+.b {
+  width:100%;
+  
+  font-size:12px;
+  color:#000;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#f7f6f7;
+  border-radius: 5px 5px 0px 0px;
+  
+  position: absolute;/*←絶対位置*/
+    bottom: 0;
+  
+}
+  c {
+    
+  text-align:center;
+  }
+  body{
+  font-family: 'Kosugi Maru', sans-serif;
+  
+  
+  
+  background-color: #d9d9d9;
+
+
+  
+  }
+</style>

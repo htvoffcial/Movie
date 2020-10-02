@@ -1,0 +1,103 @@
+<head>
+<title>製品版-Eweb創ろう！！ ver 1.0.0.3</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="content-type" charset="utf-8">
+</head>
+<body>
+<button onclick="open('about:blank', '_self').close();">終了✖</button><button onclick="window.open('https://haruharutv.glitch.me/', null, 'width=500,toolbar=yes,menubar=yes,scrollbars=yes');">ヘルプ</button><button title="製品版限定の機能です" class="js-btn-share">共有</button><button title="製品版限定の機能です" onclick="location.href='https://smn.glitch.me/App';">ショートカット</button><hr>
+<h1>イイweb創ろう！！</h1>
+	<small>powerd by はるはるweb</small>
+<style>
+button {
+  display: inline-block;
+
+         padding: 0.5px 1em;
+     text-decoration: none;
+  background: #f7f377;
+         color: #b977f7;
+       
+
+        border-radius: 3px;
+}
+
+</style>
+<script>(function () {
+    'use strict';
+
+    if (typeof navigator.share === 'undefined') {
+        return;
+    }
+
+    var btnShare = document.querySelectorAll('.js-btn-share');
+    var shareData = {
+        title: document.querySelector('title').textContent,
+        text: document.querySelector('meta[name="description"]').getAttribute('content'),
+        url: location.href
+    };
+
+    btnShare.forEach(function (selfBtn) {
+        selfBtn.style.display = 'block';
+
+        selfBtn.addEventListener('click', function () {
+            navigator.share(shareData)
+                .then(function () {
+                    push("シェアしました","完了しました");
+                })
+                .catch(function (error) {
+                    alert("エラーでシェアできませんでした");
+                });
+        });
+    });
+}())</script>
+<hr>
+<button onclick="chp1()">サンプル1</button><button onclick="chp2()">サンプル2</button><button onclick="chp3()">サンプル3（挑戦！）</button><button onclick="chp4()">特別ステージ1</button>
+<hr>
+<form name="txt">
+<textarea wrap="hard" rows="20" cols="45" name="ontext">サンプルを選択してください</textarea>
+</form>
+<div id="rung"></div><hr>
+<p>コントロール</p>
+<button onclick="run()">run→</button><button>stop■</button>
+</body>
+<script src="https://smn.glitch.me/push.js"></script>
+<script>
+function run(){
+push("コンピューター","実行します...");
+var tenp;
+temp = document.getElementById("rung");
+
+temp.innerHTML = document.txt.ontext.value;
+
+}
+function chp1(){
+alert('この講座のポイント!!\n<○○>で始まったら</○○>で終わる');
+	document.txt.ontext.value = "<p>要素の上と下に改行あり</p><!--ここでは一般的な文字について学びます--><h1>大見出し見出し</h1>";
+myAlertClose();
+
+}
+
+function chp2(){
+alert('この講座のポイント!!\n○○{}にタグの名前をきちんと入れる');
+	document.txt.ontext.value = "<p>背景赤</p><style> p{background-color: red;}</style><!--背景を赤にします!!-->";
+myAlertClose();
+}
+function chp3(){
+alert('この講座のポイント!!\n;を忘れない');
+	document.txt.ontext.value = "alert('文字');<!--実行する際はscriptタグとサンドイッチになるようにしてください-->";
+myAlertClose();
+}
+
+
+function chp4(){
+alert('この講座のポイント!!\n学習したものを組み合わせ、自由に作りましょう');
+	
+
+}
+</script>
+
+
+
+<style>
+body {
+background-color: lightgreen;
+color:#fff;
+}
+</style>

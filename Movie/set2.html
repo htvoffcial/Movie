@@ -1,0 +1,150 @@
+
+<meta name="apple-mobile-web-app-capable" content="yes"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="認証">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('https://haruharutv.sa-kon.net/sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script><meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+a {
+
+text-decoration:none;
+color:#000;
+
+}
+div.title{
+background-color:#fff;
+width:100%;
+font-size:1.5em;
+text-align:center;
+}
+
+
+div.vdo{
+background-color:#616161;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+
+img.log{
+
+width:15%;
+
+}
+img.sm{
+
+width:100%;
+
+}
+
+@media screen and (min-width:600px){
+  img.log{
+
+width:5%;
+
+}
+
+
+img.sm{
+
+width:100%;
+
+}
+
+
+div.vdo{
+background-color:#616161;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+
+
+
+
+}
+body {
+
+background-color:#3b3b3b;
+}
+</style>
+<div class="title"><img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338o" class="log">はるはるTV</div><br>
+<button onclick="location.href='https://haruharutv.sa-kon.net/Movie/set2.html';">もう一度</button>
+<p>
+最初にご利用される際は、セットアップが必要です
+</p>
+<h3>手順2</h3>
+<p>
+
+設定の同期が完了しました
+
+</p>
+<a href="https://haruharutv.sa-kon.net/Movie/index.html">さっそく試す(動画を選択したらキャストボタンを押してください)</a>
+<script>$.ajax({
+    type: "POST",
+    url: "https://mv-.glitch.me/tj.php",
+    dataType: "json"
+});</script>
+<script>
+var url = location.href
+
+if(url.indexOf('http:') >= 0) { // 判定方法の修正
+  // url文字列の書き換え
+  var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
+
+  // リダイレクト
+  location.replace(newUrl);
+}
+
+</script>
+
+
+<style>
+.b {
+  width:100%;
+  
+  font-size:12px;
+  color:#000;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#f2f0f0;
+  border-radius: 5px 5px 0px 0px;
+  
+  position: absolute;/*←絶対位置*/
+    bottom: 0;
+  
+}
+  c {
+    
+  text-align:center;
+  }
+  body{
+  font-family: 'Kosugi Maru', sans-serif;
+  
+  color:#fff;
+  
+  
+
+  
+  }
+</style>

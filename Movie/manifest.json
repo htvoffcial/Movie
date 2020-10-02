@@ -1,0 +1,17 @@
+{
+  "name":"はるはる動画サービス",
+  "short_name":"はるはる動画",
+  "icons": [{
+      "src": "https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338",
+      "sizes":"192x192",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338",
+      "sizes":"512x512",
+      "type": "image/png"
+    }],
+  "start_url": "index.html?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}

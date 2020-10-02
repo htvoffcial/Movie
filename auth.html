@@ -1,0 +1,85 @@
+
+<meta name="apple-mobile-web-app-capable" content="yes"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="二段階認証">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2F32304413-89A0-4A15-945A-CDA96EA24811.png?v=1600500470321">
+<link rel='shortcut icon' href='https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2F32304413-89A0-4A15-945A-CDA96EA24811.png?v=1600500470321' id='fav'>
+
+<link rel="manifest" href="m/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script><meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>div{
+background-color:#bad4d3;
+width:100%;
+font-size:1.5em;
+}
+img{
+border-radius:50%;
+width:15%;
+
+}
+
+</style>
+<div><img src="https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2F32304413-89A0-4A15-945A-CDA96EA24811.png?v=1600500470321">はるはるAuthentication</div><br>
+<script>
+var url = location.href
+
+if(url.indexOf('http:') >= 0) { // 判定方法の修正
+  // url文字列の書き換え
+  var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
+
+  // リダイレクト
+  location.replace(newUrl);
+}
+
+</script>
+<title>認証待機中...</title>
+<hr>
+<div id="c">
+<small>
+
+新たな認証要求はありません<a href="about.html">このサービスについて/ヘルプ</a></small></div><script src="auth.js"></script>
+<hr>
+<style>
+.b {
+  width:100%;
+  
+  font-size:12px;
+  color:#000;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#f7f6f7;
+  border-radius: 5px 5px 0px 0px;
+  
+  position: absolute;/*←絶対位置*/
+    bottom: 0;
+  
+}
+  c {
+    
+  text-align:center;
+  }
+  body{
+  font-family: 'Kosugi Maru', sans-serif;
+  
+  
+  
+  background-color: #d9d9d9;
+
+
+  
+  }
+</style>

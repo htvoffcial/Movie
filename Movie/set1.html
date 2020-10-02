@@ -1,0 +1,189 @@
+
+<meta name="apple-mobile-web-app-capable" content="yes"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="はるはる動画サービス">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('https://haruharutv.sa-kon.net/sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script><meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+countup();
+
+function countup (){
+    var idc = setTimeout(countup, 1000);
+    
+$.ajax({
+    type: "POST", //　POSTでも可
+    url: "https://mv-.glitch.me/tvset.php",
+    //　渡したいデータ
+    dataType : "json", //　データ形式を指定
+    scriptCharset: 'utf-8' //　文字コードを指定
+})
+
+  .then(
+    function( param ){　 
+    
+    if(param=="go"){
+    location.href="https://haruharutv.sa-kon.net/Movie/tvos.html";
+    }else{
+    }
+         
+       
+    },
+  
+  
+    function( XMLHttpRequest, textStatus, errorThrown ){
+        console.log( errorThrown ); //　エラー表示
+});
+}
+
+
+
+
+
+
+
+</script>
+<style>
+
+
+
+
+a {
+
+text-decoration:none;
+color:#000;
+
+}
+div.title{
+background-color:#fff;
+width:100%;
+font-size:1.5em;
+text-align:center;
+}
+
+
+div.vdo{
+background-color:#616161;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+
+img.log{
+
+width:15%;
+
+}
+img.sm{
+
+width:100%;
+
+}
+
+@media screen and (min-width:600px){
+  img.log{
+
+width:5%;
+
+}
+
+
+img.sm{
+
+width:20%;
+
+}
+
+
+div.vdo{
+background-color:#616161;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+
+
+
+
+}
+body {
+
+background-color:#3b3b3b;
+}
+</style>
+<div class="title"><img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338o" class="log">はるはるTV</div><br>
+
+<p>
+最初にご利用される際は、セットアップが必要です
+</p>
+<h3>手順1</h3>
+<p>
+まずはるはるアカウント(TIFN)を同期します
+
+この設定が完了したら自動的にtvOSが使えるようになります
+
+
+</p>
+<img src="https://cdn.glitch.com/e3639768-ef68-497d-b61f-d80a3d04c8b2%2F210C36E3-38C6-4E2E-92AA-050F6BE4235E.png?v=1601176208329" class="sm">
+<script>
+var url = location.href
+
+if(url.indexOf('http:') >= 0) { // 判定方法の修正
+  // url文字列の書き換え
+  var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
+
+  // リダイレクト
+  location.replace(newUrl);
+}
+
+</script>
+
+
+<style>
+.b {
+  width:100%;
+  
+  font-size:12px;
+  color:#000;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#f2f0f0;
+  border-radius: 5px 5px 0px 0px;
+  
+  position: absolute;/*←絶対位置*/
+    bottom: 0;
+  
+}
+  c {
+    
+  text-align:center;
+  }
+  body{
+  font-family: 'Kosugi Maru', sans-serif;
+  
+  color:#fff;
+  
+  
+
+  
+  }
+</style>

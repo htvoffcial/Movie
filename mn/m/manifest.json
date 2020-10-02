@@ -1,0 +1,17 @@
+{
+  "name":"お知らせ確認",
+  "short_name":"お知らせ確認",
+  "icons": [{
+      "src": "https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2FBB23D83F-F0DA-4D14-9505-51D22BB3A87B.png?v=1600580260034",
+      "sizes":"192x192",
+      "type": "image/png"
+    }, {
+      "src": "https://cdn.glitch.com/56e8ccb8-0084-421c-9bee-96df876fdde1%2FBB23D83F-F0DA-4D14-9505-51D22BB3A87B.png?v=1600580260034",
+      "sizes":"512x512",
+      "type": "image/png"
+    }],
+  "start_url": "https://haruharutv.sa-kon.net/osirase.html?utm_source=homescreen",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}

@@ -1,0 +1,223 @@
+
+<meta name="apple-mobile-web-app-capable" content="yes"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<!-- ホーム画面に表示されるアプリ名 -->
+<meta name="apple-mobile-web-app-title" content="はるはる動画サービス">
+<!-- ホーム画面に表示されるアプリアイコン -->
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338">
+
+<link rel="manifest" href="https://haruharutv.sa-kon.net/Movie/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+<!-- ServiceWorkerの登録 -->
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('https://haruharutv.sa-kon.net/sw.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+}
+</script><meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen(); 
+    }
+  }
+}
+</script>
+
+
+<style>
+a {
+
+text-decoration:none;
+color:#000;
+
+}
+div.title{
+background-color:#fff;
+width:100%;
+font-size:1.5em;
+text-align:center;
+}
+
+div.vdo2{
+background-color:#616161;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+div.vdo{
+background-color:#616161;
+width:100%;
+
+text-align:center;
+
+margin-top: 10%;
+}
+
+img.log{
+
+width:15%;
+
+}
+img.sm{
+
+width:100%;
+
+}
+
+@media screen and (min-width:600px){
+  img.log{
+
+width:5%;
+
+}
+
+
+img.sm{
+
+width:100%;
+
+}
+
+
+div.vdo{
+background-color:#616161;
+width:50%;
+display:inline;
+text-align:center;
+
+margin-top: 10%;
+float: left;
+}
+
+div.vdo2{
+background-color:#616161;
+width:50%;
+display:inline;
+text-align:center;
+
+margin-top: 10%;
+float: right;
+}
+
+
+}
+body {
+
+background-color:#3b3b3b;
+}
+</style>
+<script>$.ajax({
+    type: "POST",
+    url: "https://mv-.glitch.me/to.php",
+    dataType: "json"
+});</script>
+<div class="title"><img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F231FC02A-77A9-4206-8943-34912AF32CCC.png?v=1600939956338o" class="log">はるはるTV</div><br>
+<div class="vdo">
+
+<img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-24%20204856.png?v=1600948196621" class="sm">
+<p>大人から子供まで楽しめるマイクラ実況今回はおうちを紹介、この世界で様々なことを試していきたいと思います次回...</p>
+<small>最近-はるはるTV</small><br>
+<a href="https://haruharutv.sa-kon.net/Movie/mv-1.html">見る</a>
+</div>
+
+
+<div class="vdo2">
+<img src="https://cdn.glitch.com/269f48ab-c958-4106-b53b-22f03541db6e%2F%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202020-09-24%20201135.png?v=1600945916597" class="sm">
+<p>編集が大変で未公開だった動画。これはテロッ...</p>
+<small>5月-はるはるTV</small>
+</div><div id="add">宣伝/PR</div><button onclick="toggleFullScreen()"> フルスクリーン表示</button>
+
+
+<script>
+countup();
+
+function countup (){
+    var idc = setTimeout(countup, 1000);
+    
+$.ajax({
+    type: "POST", //　POSTでも可
+    url: "https://cast-.glitch.me/tvset.php",
+    //　渡したいデータ
+    dataType : "json", //　データ形式を指定
+    scriptCharset: 'utf-8' //　文字コードを指定
+})
+
+  .then(
+    function( param ){　 
+    
+    if(param=="go"){
+    location.href="https://haruharutv.sa-kon.net/Movie/mv-1.html";
+    }else{
+    }
+         
+       
+    },
+  
+  
+    function( XMLHttpRequest, textStatus, errorThrown ){
+        console.log( errorThrown ); //　エラー表示
+});
+}
+
+
+
+
+
+
+</script>
+
+
+<script>
+var url = location.href
+
+if(url.indexOf('http:') >= 0) { // 判定方法の修正
+  // url文字列の書き換え
+  var newUrl = url.replace('http:', 'https:'); // 書き換え方法の修正
+
+  // リダイレクト
+  location.replace(newUrl);
+}
+
+</script>
+
+
+<style>
+.b {
+  width:100%;
+  
+  font-size:12px;
+  color:#000;
+  text-align:center;
+  display:block;
+  padding:10px 0 10px;
+  background:#f2f0f0;
+  border-radius: 5px 5px 0px 0px;
+  
+  position: absolute;/*←絶対位置*/
+    bottom: 0;
+  
+}
+  c {
+    
+  text-align:center;
+  }
+  body{
+  font-family: 'Kosugi Maru', sans-serif;
+  
+  
+  
+  
+
+  
+  }
+</style>

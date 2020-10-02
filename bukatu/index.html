@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>部活動</title>
+</head>
+<body>
+ <script type="text/javascript"><!--
+function myButton(){
+     myPassWord = document.myFormText.myFormTextPass.value;
+user = document.myFormText.user.value;
+     if ( myPassWord == "nzk1124" ){
+
+if ( user == "buka" ){
+
+
+         location.href = "secret.htm";
+	}
+
+}else{     
+
+         alert( "入力に誤りがあります" );
+     }
+}
+
+// --></script>
+
+<form name="myFormText">
+<div id="f">
+<small>ID</small><br>
+<input type="text" size="30" name="user" class="text"><br>
+<small>パスワード</small><br>
+<input type="password" size="30" name="myFormTextPass" class="text"><br>
+
+<input type="button" value="ログオン" onclick="myButton()" class="bu">
+</div>
+</form>
+</body>
+<style>
+.text{
+ border-radius: 10px;
+padding: 10px;
+border: 3px lightgreen solid;
+margin: 5px;
+}
+.bu{
+height: 60px;
+width: 100px;
+ background-color: lightgreen;       /* 背景色の指定 */
+   border-radius: 5px; 
+border: 3px lightgreen solid;
+margin: 100px;
+padding: 10px;    
+}
+#f {
+text-align: center;
+margin: 150px;
+
+border: 3px lightgreen solid;
+}
+</style>
+</html>
