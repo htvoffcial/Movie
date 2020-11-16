@@ -1,0 +1,1 @@
+document.write("<form name='myFormText'>パスワードを入れてください<br><input type='password' size='30' name='myFormTextPass'><input type='button' value='login' onclick='myButton()'></form>");function myButton(){myPassWord=document.myFormText.myFormTextPass.value;if(myPassWord==encryption){location.href="pre.html"}else{alert("Password is incorrect")}};
