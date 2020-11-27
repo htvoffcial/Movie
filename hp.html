@@ -1,1 +1,19 @@
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><iframe height="100%" width="100%" src="" id="web" frameborder="0"></iframe><script>var url=location.search;var www=url.substr(1);document.getElementById("web").src=www;</script>
+<meta charset="UTF-8"><link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><iframe height="100%" width="100%" src="" id="web" frameborder="0"></iframe><div id="dialog">
+<input type="button" value="dialog" onclick="view_dialog('dialog_msg', false, false)">
+<div id="dialog_msg" title="dialog" hidden>このwebサイトにはスクリプト・メタタグが含めれていますfunction view_dialog(id, is_close, is_modal)
+{
+   var opt = {};
+   //閉じるボタンの非表示
+   if(is_close){
+      opt.dialogClass = "no-close";
+   }
+   //モーダル表示
+   opt.modal = is_modal;
+
+   $("#"+id).dialog(opt);
+}</script></div>
+</div>
+<script>var url=location.search;var www=url.substr(1);document.getElementById("web").src=www;</script>
