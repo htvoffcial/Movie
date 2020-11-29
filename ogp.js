@@ -1,1 +1,1 @@
-document.write('<meta property="og:type" content="article"><meta property="og:description" content="homepage"><meta property="og:title" content="'+document.title+'"><meta property="og:url" content="'+location.href+'"><meta property="og:site_name" content="htvoffcial.github.io">');
+document.write('<meta property="og:type" content="article"><meta property="og:description" content="homepage"><meta property="og:title" content="'+document.title+'-ogapi"><meta property="og:url" content="'+location.href+'"><meta property="og:site_name" content="htvoffcial.github.io">');
