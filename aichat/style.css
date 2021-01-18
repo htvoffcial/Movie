@@ -3,6 +3,10 @@ body{
 border: solid;
 border-radius: 8px;
 
+ display: flex;
+
+flex-wrap: wrap;
+  align-items: baseline;
 
 font-family: 'Noto Sans JP', sans-serif;
 
