@@ -10,7 +10,7 @@ font-family: 'Noto Sans JP', sans-serif;
 #L{
 
 display:flex;
-  justify-content:flex-end;
+ margin-left:auto;
 
 }
 #R{
