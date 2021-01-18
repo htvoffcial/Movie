@@ -7,11 +7,10 @@ border-radius: 8px;
 font-family: 'Noto Sans JP', sans-serif;
 
 }
-#chatm L{
+#L{
 
-
- margin-left:auto;
-
+padding:10px; 
+background-color:red;
 }
 #chatm R{
 
