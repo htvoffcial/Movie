@@ -3,6 +3,15 @@ body{
 border: solid;
 border-radius: 8px;
 
+display: flex;
 font-family: 'Noto Sans JP', sans-serif;
+
+}
+#L{
+
+justify-content:flex-end;
+
+}
+#R{
 
 }
