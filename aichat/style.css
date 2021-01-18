@@ -17,7 +17,8 @@ footer{
     background-color: #89c7de;
     color: #fff;
    
-    
+    margin:5px; 
+width:95%;
 
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
