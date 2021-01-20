@@ -12,34 +12,29 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-<script>ui.action.text({
+<script>
+  var ui = new BotUI('chat-app');
+
+
+//ボット側のチャット処理
+ui.message.bot({
   
-  action: {
-    placeholder: '名前を入力してください'
-  }
+  //メッセージを表示する
+  content: 'こんにちは、ボットです！'
   
 }).then(function() {
 
 
-
-
-  //「ボタン」を表示する
-  ui.action.button({
+  //ユーザー側のチャット処理
+  ui.message.human({
     
-    //「はい」「いいえ」のボタンを作成
-    action: [{
-      text: 'はい',
-      value: true
-    }, {
-      text: 'いいえ',
-      value: false
-    }]
+    content: 'こんにちは、ユーザーです！'
     
   });
 
 
 });
-  
+ 
   </script>
 </head>
 <body>
