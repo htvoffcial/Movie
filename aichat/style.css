@@ -1,53 +1,16 @@
 
 body{
-border: solid;
-border-radius: 8px;
 
- display: flex;
 
-flex-wrap: wrap;
-  align-items: baseline;
 
 font-family: 'Noto Sans JP', sans-serif;
 
 }
 
-footer{
-    
-    background-color: #89c7de;
-    color: #fff;
-   
-    margin:5px; 
-width:95%;
 
-    position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
-}
-
-
-
-
-
-.L{
-
-border-radius: 8px;
-
- display: inline;
-
-margin:10px;
-
-padding:10px; 
-background-color:red;
-}
-.R{
-
-border-radius: 8px;
+ 
 
  
 
 
 
-padding:10px; 
-background-color:blue;
-
-}
